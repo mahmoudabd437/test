@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    box-shadow: 10px 10px 30px hsla(241, 100%, 89%, 0.427);
+    transform: translate(-50%, -50%);
+}
+
+/* result section  */
+
+.result {
+    flex: 1;
+    padding: 20px;
+    background-color: #3a3ac3;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    max-width: 450px;
+    min-width: 340px;
+}
+
+.result .p1 {
+    margin: 0;
+    padding: 10px;
+    color: #aaa;
+    font-size: 21px;
+}
+
+.result div {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    background-image: linear-gradient(hsl(256deg 46.6% 52.76%), hsla(241, 72%, 46%, 0));
+    padding: 20px;
+}
+
+.result .s1 {
+    font-size: 50px;
+    margin: auto;
+    display: block;
+    font-weight: bold;
+}
+
+.result .s2 {
+    margin-top: 10px;
+    display: block;
+    color: #aaa;
+    font-size: 20px;
+}
+
+.result .p2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 25px;
+}
+
+.result .p3 {
+    margin: 29px 50px 0px;
+    color: #aaa;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+/* summary section */
+
+.summary {
+    flex: 1;
+    padding: 10px;
+}
+
+.summary p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.summary .list .score {
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 15px 0px;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary .reaction {
+    color: #ff5555;
+    background-color: hsla(0, 100%, 67%, 0.07);
+}
+
+.summary .memory {
+    color: #ffbd40;
+    background-color: hsla(39, 100%, 56%, 0.07);
+}
+
+.summary .verbal {
+    color: #15c198;
+    background-color: hsla(166, 100%, 37%, 0.07);
+}
+
+.summary .visual {
+    color: #1528d7;
+    background-color: hsla(234, 85%, 45%, 0.07);
+}
+
+.summary .s1 {
+    color: black;
+}
+
+.summary .s2 {
+    color: black;
+    opacity: .3;
+}
+
+.button {
+    margin: 10px 0 20px;
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #252558;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.button:hover {
+    background-color: #5542f4;
+}
+
+/* response section  */
+
+@media (max-width:767px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .result {
+        margin-top: 166px;
+    }
+
+    .summary p {
+        margin: 0px;
+    }
+}
